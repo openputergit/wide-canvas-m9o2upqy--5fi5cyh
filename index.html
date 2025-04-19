@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Janoi Sanskar Invitation</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --saffron: #FF9933;
+            --maroon: #800000;
+            --gold: #FFD700;
+            --ivory: #FFFFF0;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--ivory);
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCI+CiAgPHRleHQgeD0iNSIgeT0iMzAiIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjIwIiBmaWxsPSJyZ2JhKDEyOCwwLDAsMC4xKSI+ॐ</text+Pgo8L3N2Zz4=');
+        }
+
+        .vedic-heading {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .sacred-thread {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: var(--gold);
+            animation: threadFlow 2s ease-in-out;
+        }
+
+        .floating-om {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes threadFlow {
+            from { transform: scaleX(0); }
+            to { transform: scaleX(1); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .card {
+            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.8);
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--gold);
+            transform: translateY(-50%);
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease;
+        }
+
+        #audioControl {
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+    <button id="audioControl" class="bg-white p-3 rounded-full shadow-lg">
+        <i class="bi bi-volume-up text-2xl text-maroon"></i>
+    </button>
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <div class="text-center relative mb-16">
+            <div class="sacred-thread"></div>
+            <h1 class="vedic-heading text-4xl md:text-6xl text-maroon mb-6 animate-fade-in">
+                You're Invited to the Sacred Janoi Sanskar
+            </h1>
+            <div class="floating-om text-6xl md:text-8xl text-gold opacity-20 mb-8">ॐ</div>
+        </div>
+
+        <!-- Ceremony Details -->
+        <div class="card p-8 rounded-lg mb-16 text-center">
+            <h2 class="vedic-heading text-3xl text-maroon mb-6">For our beloved sons</h2>
+            <div class="space-y-4">
+                <p class="text-2xl text-gold">Yagna Amit Oza</p>
+                <p class="text-2xl text-gold">Om Asit Oza</p>
+                <div class="my-8">
+                    <p class="text-xl">29th May 2025</p>
+                    <p class="text-xl">From 2 PM onwards</p>
+                    <p class="text-xl">Agrasen Foundation</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ceremony Schedule -->
+        <div class="card p-8 rounded-lg mb-16">
+            <h2 class="vedic-heading text-2xl text-maroon mb-6">Ceremony Schedule</h2>
+            <div class="space-y-6">
+                <div class="timeline-item">Arrival & Welcome</div>
+                <div class="timeline-item">Vedic Chanting</div>
+                <div class="timeline-item">Yajnopavita Ceremony</div>
+                <div class="timeline-item">Bhojan (Traditional Feast)</div>
+                <div class="timeline-item">Blessing & Gift Giving</div>
+            </div>
+        </div>
+
+        <!-- RSVP Section -->
+        <div class="card p-8 rounded-lg mb-16">
+            <h2 class="vedic-heading text-2xl text-maroon mb-6">RSVP</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="https://wa.me/919879791327" class="whatsapp-btn bg-green-500 text-white p-4 rounded-lg text-center">
+                    <i class="bi bi-whatsapp"></i> 9879791327
+                </a>
+                <a href="https://wa.me/919879591327" class="whatsapp-btn bg-green-500 text-white p-4 rounded-lg text-center">
+                    <i class="bi bi-whatsapp"></i> 9879591327
+                </a>
+                <a href="https://wa.me/919826430000" class="whatsapp-btn bg-green-500 text-white p-4 rounded-lg text-center">
+                    <i class="bi bi-whatsapp"></i> 9826430000
+                </a>
+            </div>
+        </div>
+
+        <!-- Location -->
+        <div class="card p-8 rounded-lg">
+            <h2 class="vedic-heading text-2xl text-maroon mb-6">Venue</h2>
+            <a href="https://maps.app.goo.gl/nK695exvB4dAG4Dk6" 
+               class="flex items-center justify-center space-x-2 text-blue-600 hover:text-blue-800">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>Agrasen Foundation, Agrasen Road, near Club O7, Shela, Gujarat 380058</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        const audioElement = document.getElementById('bgMusic');
+        const audioControl = document.getElementById('audioControl');
+        const audioIcon = audioControl.querySelector('i');
+        let isPlaying = false;
+
+        audioControl.addEventListener('click', () => {
+            if (isPlaying) {
+                audioElement.pause();
+                audioIcon.classList.replace('bi-volume-up', 'bi-volume-mute');
+            } else {
+                audioElement.play();
+                audioIcon.classList.replace('bi-volume-mute', 'bi-volume-up');
+            }
+            isPlaying = !isPlaying;
+        });
+
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
